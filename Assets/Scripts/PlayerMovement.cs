@@ -16,12 +16,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
-            transform.position += transform.forward * playerSpeed * Time.deltaTime;
+            transform.position += transform.up * playerSpeed * Time.deltaTime;
         }
 
         else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
             {
-                transform.position += -transform.forward * playerSpeed * Time.deltaTime;
+                transform.position += -transform.up * playerSpeed * Time.deltaTime;
             }
     }
 }
